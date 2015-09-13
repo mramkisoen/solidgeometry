@@ -4,7 +4,7 @@ $BODY$
 DECLARE
  	poly geometry;
  BEGIN
- 	poly := __st_3DCylinder22bb(j::json->'PointBegin', j::json->'PointEnd', ((j::json->'Radius')::text)::float);
+ 	poly := __st_3DCylinderbb(j::json->'PointBegin', j::json->'PointEnd', ((j::json->'Radius')::text)::float);
  	return poly;
 END $BODY$
   LANGUAGE plpgsql IMMUTABLE
