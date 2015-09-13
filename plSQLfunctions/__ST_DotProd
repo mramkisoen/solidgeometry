@@ -16,4 +16,3 @@ BEGIN
 END$BODY$
   LANGUAGE plpgsql IMMUTABLE
   COST 100;
-ALTER FUNCTION __st_dotprod(geometry, geometry, geometry)
