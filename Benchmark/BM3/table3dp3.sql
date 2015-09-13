@@ -14,5 +14,5 @@ WITH (
 );
 
 INSERT INTO geo3d.pipe3dp3
-SELECT pipeid, attributes, ST_bboxline(attributes)
+SELECT pipeid, attributes, ST_bboxlinebox(attributes)
 FROM geo3d.pipe3dp;
