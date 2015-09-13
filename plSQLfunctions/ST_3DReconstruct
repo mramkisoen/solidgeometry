@@ -4,7 +4,7 @@ $BODY$
 DECLARE
  	geo geometry;
  BEGIN
-	geo := __st_3dcylinder22((j -> 'PointBegin'::text)::json, (j -> 'PointEnd'::text)::json, ((j -> 'Radius'::text)::text)::double precision);
+	geo := __st_3dcylinder((j -> 'PointBegin'::text)::json, (j -> 'PointEnd'::text)::json, ((j -> 'Radius'::text)::text)::double precision);
  	return geo;
 END $BODY$
   LANGUAGE plpgsql IMMUTABLE
