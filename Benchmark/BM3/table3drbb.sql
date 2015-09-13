@@ -14,7 +14,7 @@ WITH (
 );
 
 INSERT INTO geo3d.pipe3drbb
-select *, ST_3DRBB(attributes)
+select *, ST_RBB(attributes)
 from geo3d.pipe3dp;
 
 CREATE INDEX pipe3drbb_index
