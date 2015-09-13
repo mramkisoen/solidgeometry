@@ -66,7 +66,6 @@ DECLARE
 	END IF;
 	
 	return ret;
-	--RESTORE OPTION!!
 	
 END $BODY$
   LANGUAGE plpgsql IMMUTABLE
