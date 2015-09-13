@@ -67,4 +67,3 @@ DECLARE
 END $BODY$
   LANGUAGE plpgsql IMMUTABLE
   COST 100;
-ALTER FUNCTION st_circelpoly(json, double precision, double precision, geometry)
