@@ -48,5 +48,3 @@ DECLARE
 END $BODY$
   LANGUAGE plpgsql IMMUTABLE
   COST 100;
-ALTER FUNCTION st_bboxlinebox(jsonb)
-  OWNER TO myron;
