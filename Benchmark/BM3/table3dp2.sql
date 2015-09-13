@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS geo3d.pipe3dp2;
+
 CREATE TABLE geo3d.pipe3dp2
 (
   pipeid integer,
@@ -17,5 +19,5 @@ CREATE INDEX pipe3dp2_index
   (bbox3d);
   
 INSERT INTO geo3d.pipe3dp2
-SELECT pipeid, attributes, ST_bbox(attributes)
+SELECT pipeid, attributes, ST_bboxline(attributes)
 FROM geo3d.pipe3dp;
