@@ -17,4 +17,3 @@ BEGIN
 END $BODY$
   LANGUAGE plpgsql IMMUTABLE
   COST 100;
-ALTER FUNCTION __st_3dcylinder(json, json, double precision)
