@@ -17,5 +17,5 @@ CREATE INDEX pipe3dp2_index
   (bbox3d);
   
 INSERT INTO geo3d.pipe3dp2
-SELECT pipeid, attributes, ST_bboxline(attributes)
+SELECT pipeid, attributes, ST_bbox(attributes)
 FROM geo3d.pipe3dp;
