@@ -5,7 +5,7 @@ CREATE TABLE geo3d.pipe3drbb
    pipeid integer,
    attributes jsonb,
    rbb geometry,
-     CONSTRAINT "FK_pipe3dp_pipes" FOREIGN KEY (pipeid)
+     CONSTRAINT "FK_pipe3drbb_pipes" FOREIGN KEY (pipeid)
 	REFERENCES geo3d.pipes (pipeid) MATCH SIMPLE
 	ON UPDATE NO ACTION ON DELETE NO ACTION
 )
