@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS geo3d.pipe3dp3;
+
 CREATE TABLE geo3d.pipe3dp3
 (
   pipeid integer,
