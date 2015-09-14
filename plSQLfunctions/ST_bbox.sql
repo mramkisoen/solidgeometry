@@ -3,14 +3,12 @@ CREATE OR REPLACE FUNCTION st_bbox(geo geometry)
 $BODY$
 DECLARE
  	poly geometry;
- 	poly2 geometry;
  	zmin float;
  	zmax float;
  	h float;
  BEGIN
 	--box3d creation
 	poly := box3d(geo)::geometry;
---	poly2 := box3d(geo);
 	
  	--z min and max
  	zmin := ST_Zmin(geo);
