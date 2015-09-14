@@ -19,9 +19,6 @@ DECLARE
  	ymin float;
  	zmin float;
 
- 	p1 geometry;
- 	p2 geometry;
-
  	poly geometry;
  BEGIN
  	bpx := (((j::json->'PointBegin')->'X')::text)::float;
