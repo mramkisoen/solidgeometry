@@ -18,7 +18,6 @@ DECLARE
 	base_r geometry;
 	centerpt geometry;
 
- 	centerline geometry;
  	basenormal geometry;
  	temp_pt geometry;
  	ret geometry;
