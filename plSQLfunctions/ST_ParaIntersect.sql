@@ -29,7 +29,7 @@ BEGIN
 	cl2 := ST_MakeLine(cl2p1,cl2p2);
 
 	r1 := ((obj1::json->'Radius')::text)::float;
-	r1 := ((obj2::json->'Radius')::text)::float;
+	r2 := ((obj2::json->'Radius')::text)::float;
 
 	-- compute para intersection
 	dis := ST_3DDistance(cl1,cl2);
