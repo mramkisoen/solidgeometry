@@ -20,7 +20,9 @@ BEGIN
   
   -- This function may give a constant Z-value of 0. In this case please translate the point randomly in the z axis with:
   -- random()*(z_max - z_min) + z_min)
+  -- z_max and z_min are the minimum and maxmum z-value of the generated Box3D geometry (output of ST_3DExtent)
   -- This error is caused by PostgreSQL's Box3d geometry, which is automatically casted to a 2D polygon without Z-value.
+  -- This error can be resolved when the z-value will not be ignored.
   
   -- Get envelope and SRID of source polygon
   SELECT ST_XMin(geom), ST_YMin(geom), ST_ZMin(geom), ST_XMax(geom), ST_YMax(geom), ST_ZMax(geom), ST_SRID(geom)
