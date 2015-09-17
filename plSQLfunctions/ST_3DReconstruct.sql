@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION ST_3DReconstruct(j jsonb)
+CREATE OR REPLACE FUNCTION st_3dreconstruct(j jsonb)
   RETURNS geometry AS
 $BODY$
 DECLARE
