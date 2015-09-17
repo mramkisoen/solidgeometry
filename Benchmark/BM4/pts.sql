@@ -1,5 +1,5 @@
-DROP TABLE if exists bpt;
+DROP TABLE IF EXISTS bpt;
 
-create table bpt as
+CREATA TABLE bpt as
 SELECT randompointsinpolygon3d(st_3dextent(pipe3d.geometry3d), 200) AS rpoint
 FROM pernis.pipe3d;
