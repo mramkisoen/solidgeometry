@@ -1,2 +1,2 @@
-select ST_asText(rpoint) plot
-from bpt;
+SELECT ST_asText(rpoint) plot
+FROM bpt;
