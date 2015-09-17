@@ -1,3 +1,3 @@
-select count (a.*)
-from inter a, inter b
-where a.pipeid <> b.pipeid;
+SELECT count (a.*)
+FROM inter a, inter b
+WHERE a.pipeid <> b.pipeid;
