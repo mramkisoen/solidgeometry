@@ -1,2 +1,2 @@
-select ST_AsText(line2d) as plot
-from pernis.pipes;
+SELECT ST_AsText(line2d) as plot
+FROM pernis.pipes;
